@@ -204,6 +204,9 @@ h2 {
 </a>
 
     <p>Learn Computer Skills With Us.</p>
+<a href="tel:9638616059">
+    <button>📞 Call Now</button>
+</a>
 <h2 id="about">About Our Academy</h2>
 <p>We provide computer education and digital services.</p>
 
@@ -290,15 +293,33 @@ function sendWhatsApp(event) {
     let address = document.querySelector('textarea').value;
     let course = document.querySelector('select').value;
 
+    if (!name || !mobile || !address) {
+        alert("Please fill all details.");
+        return;
+    }
+
+    let data = new URLSearchParams();
+    data.append("studentName", name);
+    data.append("mobile", mobile);
+    data.append("address", address);
+    data.append("course", course);
+
     let message = "New Admission Enquiry\n" +
                   "Name: " + name + "\n" +
                   "Mobile: " + mobile + "\n" +
                   "Address: " + address + "\n" +
                   "Course: " + course;
 
-    let url = "https://wa.me/9638616059?text=" + encodeURIComponent(message);
+    let whatsappURL = "https://wa.me/9638616059?text=" +
+                      encodeURIComponent(message);
 
-    window.open(url, "_blank");
+    window.open(whatsappURL, "_blank");
+
+    fetch("https://script.google.com/macros/s/AKfycbwEd-Bl94Jin7W4sOpL-ntYWGisFH-Kommdow2H49m2aKf7Zoh-i1C2aYDxzIMaCB6a/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: data
+    });
 }
 </script>
 
