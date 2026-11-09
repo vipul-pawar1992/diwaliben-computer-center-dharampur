@@ -1,154 +1,126 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DIWALIBEN COMPUTER CENTER</title>
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-.course-card {
-    background-color: white;
-    border: 2px solid green;
-    border-radius: 10px;
-box-shadow: 0 4px 8px gray;
-    padding: 20px;
-    margin: 15px;
-    width: 250px;
-    display: inline-block;
+    <title>DIWALIBEN COMPUTER CENTER</title>
+
+<style>
+* {
+    box-sizing: border-box;
 }
-.course-card:hover {
-    background-color: lightyellow;
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-        body {
-            background-color: lightblue;
-            font-family: Arial;
-            text-align: center;
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 10px;
-    width: 100%;
-        }
+}
+
 h1 {
     color: darkblue;
-    text-align: center;
     font-size: 35px;
-    font-weight: bold;
+    text-align: center;
     text-shadow: 2px 2px 3px gray;
-    margin: 20px 5px;
 }
-        h1 {
-            color: darkblue;
-        }
-a {
+
+h2 {
+    color: green;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
     color: red;
+    font-size: 18px;
+}
+
+a {
     text-decoration: none;
     font-weight: bold;
 }
 
-        h2 {
-            color: green;
-        }
-
-        p {
-            color: red;
-            font-size: 18px;
-        }
 button {
     background-color: green;
     color: white;
-    padding: 15px 30px;
+    padding: 12px 22px;
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 17px;
     cursor: pointer;
-    transition: 0.3s;
+    margin: 5px;
 }
+
 button:hover {
     background-color: darkblue;
-    color: white;
 }
+
+.main-header {
+    background: linear-gradient(135deg, #003366, #007bff);
+    color: white;
+    padding: 25px 10px;
+    border-radius: 10px;
+}
+
+.main-header h1 {
+    font-size: 28px;
+    color: white;
+    margin: 5px;
+}
+
+.main-header p {
+    color: white;
+    font-size: 17px;
+    margin: 8px;
+}
+
 nav {
     background-color: darkblue;
     padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
-}
-@media screen and (max-width: 600px) {
-    nav a {
-        display: inline-block;
-        margin: 8px;
-        font-size: 15px;
-    }
-}
-form h2 {
-    color: darkblue;
-    font-size: 24px;
-}
-form {
-    background-color: white;
-    padding: 25px;
-    margin: 20px auto;
-    width: 90%;
-max-width: 350px;
-box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px gray;
+    margin: 10px;
+    font-size: 17px;
 }
 
-input, textarea, select {
-    width: 90%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    font-size: 16px;
-}
-footer {
-    background-color: darkblue;
-    color: white;
+.course-card {
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
     padding: 20px;
-text-align: center;
-font-size: 16px;
-    margin-top: 30px;
+    margin: 15px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
 }
-@media screen and (max-width: 600px) {
-    .course-card {
-        width: 90%;
-        margin: 10px auto;
-        box-sizing: border-box;
-    }
+
+.course-card:hover {
+    background-color: lightyellow;
+    transform: scale(1.03);
+    transition: 0.3s;
 }
-h1 + p {
-    color: darkred;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-h2 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 15px 5px;
-}
+
 .admission-box {
     background-color: white;
-    color: green !important;
+    color: green;
     border: 3px solid green;
     border-radius: 12px;
     padding: 20px;
     margin: 20px auto;
     max-width: 500px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
-    text-align: center;
     box-shadow: 0 4px 8px gray;
 }
+
 .batch-box {
     background-color: skyblue;
     color: darkblue;
@@ -157,8 +129,8 @@ h2 {
     padding: 15px;
     margin: 15px auto;
     max-width: 500px;
-    font-weight: bold;
 }
+
 .enroll-box {
     color: white;
     background-color: darkgreen;
@@ -169,11 +141,139 @@ h2 {
     max-width: 250px;
     margin: 15px auto;
 }
-    </style>
 
+form {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+}
+
+form h2 {
+    color: darkblue;
+    font-size: 24px;
+}
+
+input, textarea, select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+footer p {
+    color: white;
+}
+
+/* PHOTO GALLERY */
+
+#photoGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+#photoGallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+#photoGallery img:hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+.gallery-btn {
+    background-color: darkblue;
+}
+
+/* LARGE PHOTO VIEWER */
+
+.photo-viewer {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.photo-viewer img {
+    max-width: 90%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.photo-controls {
+    margin-top: 15px;
+}
+
+.photo-controls button {
+    margin: 5px;
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .course-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #photoGallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    #photoGallery img {
+        height: 130px;
+    }
+
+    .photo-controls button {
+        font-size: 14px;
+        padding: 9px;
+    }
+}
+</style>
 </head>
 
 <body>
+
+<header class="main-header">
+    <h1>Diwaliben Computer Center</h1>
+    <p>તમારા ઉજ્જવળ ભવિષ્યની શરૂઆત અહીંથી!</p>
+</header>
+
 <nav>
     <a href="#home">Home</a> |
     <a href="#about">About Us</a> |
@@ -181,92 +281,109 @@ h2 {
     <a href="#contact">Contact</a>
 </nav>
 
-    <center>
-<h1>DIWALIBEN COMPUTER CENTER</h1>
-<p>DHARAMPUR</p>
-</center>
-<center>
-<p>Learn Computer Skills with Us</p>
-</center>
-<center>
-<img src="academy.jpeg" width="100%" style="max-width:400px;" alt="Diwaliben Computer Center">
+<section id="home">
+    <h1>DIWALIBEN COMPUTER CENTER</h1>
+    <p>DHARAMPUR</p>
 
-    <center>
-<h2 class="admission-box"><b>કોમ્પ્યુટર કોર્સ તદ્દન મફત!</b></h2>
-<h2 class="batch-box">NEW BATCH STARTING</h2>
-<h2 class="batch-box">1 JANUARY 2027</h2>
-<h2 class="admission-box">LIMITED SEATS</h2>
-<p class="enroll-box">ENROLL NOW!</p>
-</center>
-<button>Admission Open</button>
-<a href="https://wa.me/9638616059" target="_blank">
-    <button>Contact on WhatsApp</button>
-</a>
+    <p>Learn Computer Skills with Us.</p>
 
-    <p>Learn Computer Skills With Us.</p>
-<a href="tel:9638616059">
-    <button>📞 Call Now</button>
-</a>
-<h2 id="about">About Our Academy</h2>
-<p>We provide computer education and digital services.</p>
+    <img src="academy.jpeg"
+         width="100%"
+         style="max-width:400px;"
+         alt="Diwaliben Computer Center">
 
-   <h2 id="courses">Our Courses</h2>
+    <h2 class="admission-box">
+        કોમ્પ્યુટર કોર્સ તદ્દન મફત!
+    </h2>
 
+    <h2 class="batch-box">NEW BATCH STARTING</h2>
+    <h2 class="batch-box">1 JANUARY 2027</h2>
 
-    
-<div class="course-card">
-    <h3>Basic Computer</h3>
-    <p>Learn Computer Basics</p>
-</div>
-   
-<div class="course-card">
-    <h3>MS Word</h3>
-    <p>Learn Document Typing</p>
-</div>
-    
-<div class="course-card">
-    <h3>MS PowerPoint</h3>
-<p>Learn Presentation Skills</p>
-</div>
-    
-<div class="course-card">
-    <h3>MS Excel</h3>
-    <p>Learn Spreadsheet Skills</p>
-</div>
+    <h2 class="admission-box">LIMITED SEATS</h2>
 
-<div class="course-card">
-    <h3>Internet</h3>
-    <p>Learn Internet Skills</p>
-</div>
+    <p class="enroll-box">ENROLL NOW!</p>
 
-    <h2 id="contact">Contact Us</h2>
-<div class="course-card">
-    <h3>Our Address</h3>
-    <p>
-        Diwaliben Computer Centre<br>
-        Shop No. 17, Rajlaxmi Chamber<br>
-        Near Dharampur Police Station<br>
-        Beside Muthoot Finance<br>
-        Dharampur, Valsad, Gujarat
-    </p>
-    <p>Mobile: 9638616059</p>
-<a href="https://maps.app.goo.gl/J5T1nmkrVtnpoU178?g_st=awb" target="_blank">
-    <button>Get Directions on Google Maps</button>
-</a>
-</div><details style="background:#f1f8ff; padding:20px; margin:20px 0; border-radius:10px;">
+    <button type="button">Admission Open</button>
 
-    <summary style="background:darkblue; color:white; padding:15px; text-align:center; border-radius:8px; cursor:pointer; font-size:20px; font-weight:bold;">
-        ⭐ Student Reviews – View All
-<p style="text-align:center; margin:15px;">
-    <a href="https://g.page/r/Cbl8spKSvQhtEBM/review" target="_blank">
-        <button style="background:green; color:white; padding:12px 20px; border:none; border-radius:8px; font-size:16px; cursor:pointer;">
-            ⭐ Write a Google Review
-        </button>
+    <a href="https://wa.me/9638616059" target="_blank">
+        <button type="button">Contact on WhatsApp</button>
     </a>
-</p>
+
+    <br>
+
+    <a href="tel:9638616059">
+        <button type="button">📞 Call Now</button>
+    </a>
+</section>
+
+<section id="about">
+    <h2>About Our Academy</h2>
+    <p>We provide computer education and digital services.</p>
+</section>
+
+<section id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="course-card">
+        <h3>Basic Computer</h3>
+        <p>Learn Computer Basics</p>
+    </div>
+
+    <div class="course-card">
+        <h3>MS Word</h3>
+        <p>Learn Document Typing</p>
+    </div>
+
+    <div class="course-card">
+        <h3>MS PowerPoint</h3>
+        <p>Learn Presentation Skills</p>
+    </div>
+
+    <div class="course-card">
+        <h3>MS Excel</h3>
+        <p>Learn Spreadsheet Skills</p>
+    </div>
+
+    <div class="course-card">
+        <h3>Internet</h3>
+        <p>Learn Internet Skills</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="course-card">
+        <h3>Our Address</h3>
+
+        <p>
+            Diwaliben Computer Centre<br>
+            Shop No. 17, Rajlaxmi Chamber<br>
+            Near Dharampur Police Station<br>
+            Beside Muthoot Finance<br>
+            Dharampur, Valsad, Gujarat
+        </p>
+
+        <p>Mobile: 9638616059</p>
+
+        <a href="https://maps.app.goo.gl/J5T1nmkrVtnpoU178?g_st=awb"
+           target="_blank">
+            <button type="button">Get Directions on Google Maps</button>
+        </a>
+    </div>
+</section>
+
+<details style="background:#f1f8ff; padding:20px; margin:20px 0; border-radius:10px;">
+
+    <summary style="background:darkblue; color:white; padding:15px; border-radius:8px; cursor:pointer; font-size:20px; font-weight:bold;">
+        ⭐ Student Reviews – View All
     </summary>
 
-    <p style="text-align:center;">Google Maps પર વિદ્યાર્થીઓના અભિપ્રાય</p>
+    <p>Google Maps પર વિદ્યાર્થીઓના અભિપ્રાય</p>
+
+    <a href="https://g.page/r/Cbl8spKSvQhtEBM/review" target="_blank">
+        <button type="button">⭐ Write a Google Review</button>
+    </a>
 
     <div style="background:white; padding:15px; margin:10px; border-radius:8px;">
         <h3>Hitesh Thakariya</h3>
@@ -294,36 +411,87 @@ h2 {
 
 </details>
 
+<!-- STUDENT ADMISSION FORM -->
+
 <form onsubmit="sendWhatsApp(event)">
-<h2>Student Admission Form</h2>
+
+    <h2>Student Admission Form</h2>
 
     <label>Student Name:</label><br>
-    <input type="text" placeholder="Enter Your Name"><br><br>
+    <input type="text" placeholder="Enter Your Name" required><br><br>
 
     <label>Mobile Number:</label><br>
-    <input type="tel" placeholder="Enter Mobile Number"><br><br>
+    <input type="tel" placeholder="Enter Mobile Number" required><br><br>
 
     <label>Address:</label><br>
-    <textarea placeholder="Enter Your Address"></textarea><br><br>
+    <textarea placeholder="Enter Your Address" required></textarea><br><br>
 
     <label>Select Course:</label><br>
+
     <select>
         <option>Basic Computer</option>
         <option>MS Word</option>
         <option>MS Excel</option>
         <option>MS PowerPoint</option>
         <option>Internet</option>
-    </select><br><br>
+    </select>
 
-   <button type="submit">Submit</button>
+    <br><br>
+
+    <button type="submit">Submit</button>
 </form>
-    <p>Diwaliben Computer Center & CSC Centre</p>
-    <p>Dharampur, Gujarat</p>
+
+<!-- PHOTO GALLERY -->
+
+<section id="gallery">
+
+    <h2>અમારી ફોટો ગેલેરી</h2>
+
+    <button type="button"
+            class="gallery-btn"
+            onclick="toggleGallery()">
+        📸 View All Photos
+    </button>
+
+    <div id="photoGallery" style="display:none;">
+
+        <img src="photo1.jpg" alt="Photo 1" onclick="openPhoto(0)">
+        <img src="photo2.jpg" alt="Photo 2" onclick="openPhoto(1)">
+        <img src="photo3.jpg" alt="Photo 3" onclick="openPhoto(2)">
+        <img src="photo4.jpg" alt="Photo 4" onclick="openPhoto(3)">
+        <img src="photo5.jpg" alt="Photo 5" onclick="openPhoto(4)">
+        <img src="photo6.jpg" alt="Photo 6" onclick="openPhoto(5)">
+        <img src="photo7.jpg" alt="Photo 7" onclick="openPhoto(6)">
+        <img src="photo8.jpg" alt="Photo 8" onclick="openPhoto(7)">
+        <img src="photo9.jpg" alt="Photo 9" onclick="openPhoto(8)">
+        <img src="photo10.jpg" alt="Photo 10" onclick="openPhoto(9)">
+        <img src="photo11.jpg" alt="Photo 11" onclick="openPhoto(10)">
+
+    </div>
+</section>
+
+<!-- LARGE PHOTO VIEWER -->
+
+<div class="photo-viewer" id="photoViewer">
+
+    <img id="largePhoto" src="" alt="Large Photo">
+
+    <div class="photo-controls">
+        <button type="button" onclick="changePhoto(-1)">❮ Previous</button>
+        <button type="button" onclick="changePhoto(1)">Next ❯</button>
+        <button type="button" onclick="closePhoto()">✖ Close</button>
+    </div>
+
+</div>
+
 <footer>
     <p>© 2026 Diwaliben Computer Center. All Rights Reserved.</p>
-
 </footer>
+
 <script>
+
+// ADMISSION FORM
+
 function sendWhatsApp(event) {
     event.preventDefault();
 
@@ -360,6 +528,76 @@ function sendWhatsApp(event) {
         body: data
     });
 }
+
+
+// GALLERY OPEN AND CLOSE
+
+function toggleGallery() {
+    var gallery = document.getElementById("photoGallery");
+
+    if (gallery.style.display === "none") {
+        gallery.style.display = "grid";
+    } else {
+        gallery.style.display = "none";
+    }
+}
+
+
+// PHOTO LIST
+
+var photoList = [
+    "photo1.jpg",
+    "photo2.jpg",
+    "photo3.jpg",
+    "photo4.jpg",
+    "photo5.jpg",
+    "photo6.jpg",
+    "photo7.jpg",
+    "photo8.jpg",
+    "photo9.jpg",
+    "photo10.jpg",
+    "photo11.jpg"
+];
+
+var currentPhoto = 0;
+
+
+// OPEN LARGE PHOTO
+
+function openPhoto(index) {
+    currentPhoto = index;
+
+    document.getElementById("largePhoto").src =
+        photoList[currentPhoto];
+
+    document.getElementById("photoViewer").style.display = "flex";
+}
+
+
+// NEXT AND PREVIOUS PHOTO
+
+function changePhoto(direction) {
+    currentPhoto += direction;
+
+    if (currentPhoto < 0) {
+        currentPhoto = photoList.length - 1;
+    }
+
+    if (currentPhoto >= photoList.length) {
+        currentPhoto = 0;
+    }
+
+    document.getElementById("largePhoto").src =
+        photoList[currentPhoto];
+}
+
+
+// CLOSE LARGE PHOTO
+
+function closePhoto() {
+    document.getElementById("photoViewer").style.display = "none";
+}
+
 </script>
 
 </body>
